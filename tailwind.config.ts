@@ -64,9 +64,9 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				cyber: {
-					primary: '#0FA0CE',
-					secondary: '#33C3F0',
-					accent: '#1EAEDB',
+					primary: '#7C3AED',
+					secondary: '#9F7AEA',
+					accent: '#8B5CF6',
 					dark: '#1A1F2C',
 					light: '#D6BCFA',
 					muted: '#8E9196',
@@ -88,18 +88,18 @@ export default {
 				},
 				'pulse-glow': {
 					'0%, 100%': { 
-						boxShadow: '0 0 10px rgba(15, 160, 206, 0.5), 0 0 30px rgba(15, 160, 206, 0.3)' 
+						boxShadow: '0 0 10px rgba(124, 58, 237, 0.5), 0 0 30px rgba(124, 58, 237, 0.3)' 
 					},
 					'50%': { 
-						boxShadow: '0 0 15px rgba(15, 160, 206, 0.7), 0 0 40px rgba(15, 160, 206, 0.5)' 
+						boxShadow: '0 0 15px rgba(124, 58, 237, 0.7), 0 0 40px rgba(124, 58, 237, 0.5)' 
 					},
 				},
 				'text-glitch': {
 					'0%, 100%': { 
-						textShadow: '0 0 2px rgba(51, 195, 240, 0.8), 0 0 5px rgba(51, 195, 240, 0.4)' 
+						textShadow: '0 0 2px rgba(124, 58, 237, 0.8), 0 0 5px rgba(124, 58, 237, 0.4)' 
 					},
 					'50%': { 
-						textShadow: '0 0 5px rgba(51, 195, 240, 1), 0 0 10px rgba(51, 195, 240, 0.6)' 
+						textShadow: '0 0 5px rgba(124, 58, 237, 1), 0 0 10px rgba(124, 58, 237, 0.6)' 
 					},
 				},
 				'typing': {
@@ -108,7 +108,7 @@ export default {
 				},
 				'blink-caret': {
 					'from, to': { borderColor: 'transparent' },
-					'50%': { borderColor: '#0FA0CE' }
+					'50%': { borderColor: '#7C3AED' }
 				}
 			},
 			animation: {
@@ -120,12 +120,12 @@ export default {
 				'blink-caret': 'blink-caret .75s step-end infinite'
 			},
 			backgroundImage: {
-				'cyber-grid': "url(\"data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h100v100H0z' fill='none'/%3E%3Cpath d='M0 0h100v1H0zM0 10h100v1H0zM0 20h100v1H0zM0 30h100v1H0zM0 40h100v1H0zM0 50h100v1H0zM0 60h100v1H0zM0 70h100v1H0zM0 80h100v1H0zM0 90h100v1H0z' fill='rgba(15, 160, 206, 0.1)'/%3E%3Cpath d='M0 0h1v100H0zM10 0h1v100h-1zM20 0h1v100h-1zM30 0h1v100h-1zM40 0h1v100h-1zM50 0h1v100h-1zM60 0h1v100h-1zM70 0h1v100h-1zM80 0h1v100h-1zM90 0h1v100h-1z' fill='rgba(15, 160, 206, 0.1)'/%3E%3C/svg%3E\")",
+				'cyber-grid': "url(\"data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h100v100H0z' fill='none'/%3E%3Cpath d='M0 0h100v1H0zM0 10h100v1H0zM0 20h100v1H0zM0 30h100v1H0zM0 40h100v1H0zM0 50h100v1H0zM0 60h100v1H0zM0 70h100v1H0zM0 80h100v1H0zM0 90h100v1H0z' fill='rgba(124, 58, 237, 0.1)'/%3E%3Cpath d='M0 0h1v100H0zM10 0h1v100h-1zM20 0h1v100h-1zM30 0h1v100h-1zM40 0h1v100h-1zM50 0h1v100h-1zM60 0h1v100h-1zM70 0h1v100h-1zM80 0h1v100h-1zM90 0h1v100h-1z' fill='rgba(124, 58, 237, 0.1)'/%3E%3C/svg%3E\")",
 			},
 			textShadow: {
-				sm: '0 0 2px rgba(51, 195, 240, 0.8)',
-				DEFAULT: '0 0 5px rgba(51, 195, 240, 0.7), 0 0 10px rgba(51, 195, 240, 0.4)',
-				lg: '0 0 10px rgba(51, 195, 240, 1), 0 0 20px rgba(51, 195, 240, 0.6)',
+				sm: '0 0 2px rgba(124, 58, 237, 0.8)',
+				DEFAULT: '0 0 5px rgba(124, 58, 237, 0.7), 0 0 10px rgba(124, 58, 237, 0.4)',
+				lg: '0 0 10px rgba(124, 58, 237, 1), 0 0 20px rgba(124, 58, 237, 0.6)',
 			},
 		}
 	},

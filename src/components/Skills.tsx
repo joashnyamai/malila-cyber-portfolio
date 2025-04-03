@@ -12,11 +12,13 @@ interface SkillCategoryProps {
 
 const SkillCategory: React.FC<SkillCategoryProps> = ({ title, icon, skills }) => {
   return (
-    <Card className="cyber-card">
-      <CardContent className="p-6">
+    <Card className="service-card">
+      <CardContent className="p-4">
         <div className="flex items-center mb-4">
-          <div className="mr-3 text-cyber-primary">{icon}</div>
-          <h3 className="text-lg font-semibold text-cyber-secondary">{title}</h3>
+          <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center mr-3 flex-shrink-0">
+            <div className="text-primary">{icon}</div>
+          </div>
+          <h3 className="text-lg font-semibold text-secondary">{title}</h3>
         </div>
         <div className="space-y-4">
           {skills.map((skill, index) => (
@@ -25,7 +27,7 @@ const SkillCategory: React.FC<SkillCategoryProps> = ({ title, icon, skills }) =>
                 <span className="text-sm font-medium">{skill.name}</span>
                 <span className="text-xs text-foreground/70">{skill.level}%</span>
               </div>
-              <Progress value={skill.level} className="h-1.5 bg-card" indicatorClassName="bg-gradient-to-r from-cyber-primary to-cyber-accent cyber-glow" />
+              <Progress value={skill.level} className="h-1.5 bg-muted" indicatorClassName="bg-gradient-to-r from-primary to-secondary cyber-glow" />
             </div>
           ))}
         </div>
@@ -78,11 +80,14 @@ const Skills: React.FC = () => {
   ];
 
   return (
-    <section id="skills" className="py-20">
+    <section id="skills" className="py-20 hex-grid">
+      <div className="circle-bg left-1/3 top-1/3 opacity-30"></div>
+      <div className="circle-bg right-1/4 bottom-1/4 opacity-30"></div>
+      
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center mb-12">
-          <h2 className="text-3xl font-bold mb-3 cyber-text-glow">Technical Skills</h2>
-          <div className="w-16 h-1 bg-cyber-primary rounded mb-6"></div>
+          <h2 className="text-3xl font-bold mb-3 cyber-text-glow">TECHNICAL SKILLS</h2>
+          <div className="w-16 h-1 bg-primary rounded mb-6"></div>
           <p className="text-center text-foreground/80 max-w-2xl">
             My expertise spans a wide range of cybersecurity domains, web development, blockchain technologies, and technical skills.
           </p>

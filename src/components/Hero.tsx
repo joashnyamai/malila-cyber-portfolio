@@ -1,12 +1,18 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { ShieldCheck, ArrowDown, Mail, Linkedin, Github } from "lucide-react";
+import { ShieldCheck, ArrowDown, Mail, Linkedin, Github, ChevronRight } from "lucide-react";
 
 const Hero: React.FC = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
-      <div className="absolute inset-0 bg-cyber-grid opacity-20"></div>
+    <section id="home" className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden hex-grid">
+      {/* Background elements */}
+      <div className="pulse-ring" style={{ animationDelay: "0s" }}></div>
+      <div className="pulse-ring" style={{ animationDelay: "1s" }}></div>
+      <div className="pulse-ring" style={{ animationDelay: "2s" }}></div>
+      <div className="circle-bg left-1/4 top-1/4"></div>
+      <div className="circle-bg right-1/4 bottom-1/4"></div>
+      
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="flex flex-col items-center text-center space-y-6">
           <div className="inline-flex items-center justify-center w-20 h-20 rounded-full border-2 border-primary animate-pulse-glow mb-4">
@@ -28,28 +34,34 @@ const Hero: React.FC = () => {
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 mt-8">
-            <Button className="bg-primary hover:bg-accent text-white border border-primary/50 cyber-glow" onClick={() => {
-              const contactSection = document.getElementById('contact');
-              if (contactSection) contactSection.scrollIntoView({ behavior: 'smooth' });
-            }}>
+            <Button 
+              className="bg-primary hover:bg-accent text-white border border-primary/50 cyber-glow group" 
+              onClick={() => {
+                const contactSection = document.getElementById('contact');
+                if (contactSection) contactSection.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               <Mail className="mr-2 h-5 w-5" />
               Contact Me
+              <ChevronRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
             <Button 
               variant="outline" 
-              className="border-primary/50 text-primary hover:bg-primary/10"
+              className="border-primary/50 text-primary hover:bg-primary/10 group"
               onClick={() => window.open("https://www.linkedin.com/in/malila-nyamai-0b2711221/", "_blank")}
             >
               <Linkedin className="mr-2 h-5 w-5" />
               LinkedIn
+              <ChevronRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
             <Button 
               variant="outline" 
-              className="border-primary/50 text-primary hover:bg-primary/10"
+              className="border-primary/50 text-primary hover:bg-primary/10 group"
               onClick={() => window.open("https://github.com/joashnyamai", "_blank")}
             >
               <Github className="mr-2 h-5 w-5" />
               GitHub
+              <ChevronRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
           </div>
         </div>

@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Badge } from "@/components/ui/badge";
-import { BriefcaseIcon, CalendarIcon, MapPinIcon } from "lucide-react";
+import { BriefcaseIcon, CalendarIcon, MapPinIcon, Shield } from "lucide-react";
 
 interface ExperienceItemProps {
   title: string;
@@ -19,38 +19,47 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
   description,
 }) => {
   return (
-    <div className="mb-8 relative pl-8 before:absolute before:left-0 before:top-0 before:bottom-0 before:w-[2px] before:bg-gradient-to-b before:from-cyber-primary/80 before:via-cyber-primary/30 before:to-transparent">
-      <div className="absolute left-[-8px] top-0 w-4 h-4 rounded-full bg-background border-2 border-cyber-primary"></div>
-      
-      <h3 className="text-xl font-bold text-cyber-secondary mb-1">{title}</h3>
-      <div className="flex flex-wrap items-center gap-2 mb-2">
-        <Badge variant="outline" className="border-cyber-primary/50 text-cyber-primary">
-          {company}
-        </Badge>
-        <div className="flex items-center text-xs text-foreground/70">
-          <MapPinIcon className="h-3.5 w-3.5 mr-1" />
-          {location}
+    <div className="service-card mb-8">
+      <div className="flex items-start">
+        <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center mr-4 flex-shrink-0">
+          <Shield className="h-5 w-5 text-primary" />
         </div>
-        <div className="flex items-center text-xs text-foreground/70">
-          <CalendarIcon className="h-3.5 w-3.5 mr-1" />
-          {period}
+        
+        <div>
+          <h3 className="text-xl font-bold text-secondary mb-1">{title}</h3>
+          <div className="flex flex-wrap items-center gap-2 mb-2">
+            <Badge variant="outline" className="border-primary/50 text-primary">
+              {company}
+            </Badge>
+            <div className="flex items-center text-xs text-foreground/70">
+              <MapPinIcon className="h-3.5 w-3.5 mr-1" />
+              {location}
+            </div>
+            <div className="flex items-center text-xs text-foreground/70">
+              <CalendarIcon className="h-3.5 w-3.5 mr-1" />
+              {period}
+            </div>
+          </div>
+          {description && <p className="text-sm text-foreground/80">{description}</p>}
         </div>
       </div>
-      {description && <p className="text-sm text-foreground/80">{description}</p>}
     </div>
   );
 };
 
 const Experience: React.FC = () => {
   return (
-    <section id="experience" className="py-20 bg-card/50">
+    <section id="experience" className="py-20 bg-card/50 hex-grid">
+      <div className="circle-bg left-1/4 bottom-1/4 opacity-30"></div>
+      <div className="circle-bg right-1/3 top-1/3 opacity-30"></div>
+      
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center mb-12">
           <div className="flex items-center mb-3">
-            <BriefcaseIcon className="text-cyber-primary mr-2 h-6 w-6" />
-            <h2 className="text-3xl font-bold cyber-text-glow">Professional Experience</h2>
+            <BriefcaseIcon className="text-primary mr-2 h-6 w-6" />
+            <h2 className="text-3xl font-bold cyber-text-glow">PROFESSIONAL EXPERIENCE</h2>
           </div>
-          <div className="w-16 h-1 bg-cyber-primary rounded mb-6"></div>
+          <div className="w-16 h-1 bg-primary rounded mb-6"></div>
           <p className="text-center text-foreground/80 max-w-2xl">
             My professional journey and experience in the cybersecurity industry.
           </p>

@@ -81,7 +81,7 @@
   }
   
   .cyber-text-glow {
-    @apply text-shadow-[0_0_5px_rgba(51,195,240,0.7),0_0_10px_rgba(51,195,240,0.4)];
+    text-shadow: 0 0 5px rgba(51, 195, 240, 0.7), 0 0 10px rgba(51, 195, 240, 0.4);
   }
   
   .typing-animation {

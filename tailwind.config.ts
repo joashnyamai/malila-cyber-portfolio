@@ -121,8 +121,27 @@ export default {
 			},
 			backgroundImage: {
 				'cyber-grid': "url(\"data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h100v100H0z' fill='none'/%3E%3Cpath d='M0 0h100v1H0zM0 10h100v1H0zM0 20h100v1H0zM0 30h100v1H0zM0 40h100v1H0zM0 50h100v1H0zM0 60h100v1H0zM0 70h100v1H0zM0 80h100v1H0zM0 90h100v1H0z' fill='rgba(15, 160, 206, 0.1)'/%3E%3Cpath d='M0 0h1v100H0zM10 0h1v100h-1zM20 0h1v100h-1zM30 0h1v100h-1zM40 0h1v100h-1zM50 0h1v100h-1zM60 0h1v100h-1zM70 0h1v100h-1zM80 0h1v100h-1zM90 0h1v100h-1z' fill='rgba(15, 160, 206, 0.1)'/%3E%3C/svg%3E\")",
-			}
+			},
+			textShadow: {
+				sm: '0 0 2px rgba(51, 195, 240, 0.8)',
+				DEFAULT: '0 0 5px rgba(51, 195, 240, 0.7), 0 0 10px rgba(51, 195, 240, 0.4)',
+				lg: '0 0 10px rgba(51, 195, 240, 1), 0 0 20px rgba(51, 195, 240, 0.6)',
+			},
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [
+		require("tailwindcss-animate"),
+		function({ addUtilities, theme, config }) {
+			const textShadow = theme('textShadow');
+			const utilities = {};
+			
+			Object.entries(textShadow).forEach(([key, value]) => {
+				utilities[`.text-shadow${key === 'DEFAULT' ? '' : `-${key}`}`] = {
+					textShadow: value,
+				};
+			});
+			
+			addUtilities(utilities);
+		},
+	],
 } satisfies Config;

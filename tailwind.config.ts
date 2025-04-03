@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -62,12 +63,12 @@ export default {
           ring: 'hsl(var(--sidebar-ring))'
         },
         cyber: {
-          primary: '#5c4adc',
-          secondary: '#7a5cdc',
-          accent: '#4a5cdc',
-          dark: '#1a1f2c',
-          light: '#8e7adc',
-          muted: '#6b5adc',
+          primary: '#22c55e',
+          secondary: '#3b82f6',
+          accent: '#16a34a',
+          dark: '#020617',
+          light: '#86efac',
+          muted: '#4ade80',
         }
       },
       borderRadius: {
@@ -86,18 +87,18 @@ export default {
         },
         'pulse-glow': {
           '0%, 100%': { 
-            boxShadow: '0 0 10px rgba(124, 58, 237, 0.5), 0 0 30px rgba(124, 58, 237, 0.3)' 
+            boxShadow: '0 0 10px rgba(34, 197, 94, 0.5), 0 0 30px rgba(34, 197, 94, 0.3)' 
           },
           '50%': { 
-            boxShadow: '0 0 15px rgba(124, 58, 237, 0.7), 0 0 40px rgba(124, 58, 237, 0.5)' 
+            boxShadow: '0 0 15px rgba(34, 197, 94, 0.7), 0 0 40px rgba(34, 197, 94, 0.5)' 
           },
         },
         'text-glitch': {
           '0%, 100%': { 
-            textShadow: '0 0 2px rgba(124, 58, 237, 0.8), 0 0 5px rgba(124, 58, 237, 0.4)' 
+            textShadow: '0 0 2px rgba(34, 197, 94, 0.8), 0 0 5px rgba(34, 197, 94, 0.4)' 
           },
           '50%': { 
-            textShadow: '0 0 5px rgba(124, 58, 237, 1), 0 0 10px rgba(124, 58, 237, 0.6)' 
+            textShadow: '0 0 5px rgba(34, 197, 94, 1), 0 0 10px rgba(34, 197, 94, 0.6)' 
           },
         },
         'typing': {
@@ -106,7 +107,7 @@ export default {
         },
         'blink-caret': {
           'from, to': { borderColor: 'transparent' },
-          '50%': { borderColor: '#7C3AED' }
+          '50%': { borderColor: '#22c55e' }
         }
       },
       animation: {
@@ -118,12 +119,12 @@ export default {
         'blink-caret': 'blink-caret .75s step-end infinite'
       },
       backgroundImage: {
-        'cyber-grid': "url(\"data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h100v100H0z' fill='none'/%3E%3Cpath d='M0 0h100v1H0zM0 10h100v1H0zM0 20h100v1H0zM0 30h100v1H0zM0 40h100v1H0zM0 50h100v1H0zM0 60h100v1H0zM0 70h100v1H0zM0 80h100v1H0zM0 90h100v1H0z' fill='rgba(124, 58, 237, 0.1)'/%3E%3Cpath d='M0 0h1v100H0zM10 0h1v100h-1zM20 0h1v100h-1zM30 0h1v100h-1zM40 0h1v100h-1zM50 0h1v100h-1zM60 0h1v100h-1zM70 0h1v100h-1zM80 0h1v100h-1zM90 0h1v100h-1z' fill='rgba(124, 58, 237, 0.1)'/%3E%3C/svg%3E\")",
+        'cyber-grid': "url(\"data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h100v100H0z' fill='none'/%3E%3Cpath d='M0 0h100v1H0zM0 10h100v1H0zM0 20h100v1H0zM0 30h100v1H0zM0 40h100v1H0zM0 50h100v1H0zM0 60h100v1H0zM0 70h100v1H0zM0 80h100v1H0zM0 90h100v1H0z' fill='rgba(34, 197, 94, 0.1)'/%3E%3Cpath d='M0 0h1v100H0zM10 0h1v100h-1zM20 0h1v100h-1zM30 0h1v100h-1zM40 0h1v100h-1zM50 0h1v100h-1zM60 0h1v100h-1zM70 0h1v100h-1zM80 0h1v100h-1zM90 0h1v100h-1z' fill='rgba(34, 197, 94, 0.1)'/%3E%3C/svg%3E\")",
       },
       textShadow: {
-        sm: '0 0 2px rgba(124, 58, 237, 0.8)',
-        DEFAULT: '0 0 5px rgba(124, 58, 237, 0.7), 0 0 10px rgba(124, 58, 237, 0.4)',
-        lg: '0 0 10px rgba(124, 58, 237, 1), 0 0 20px rgba(124, 58, 237, 0.6)',
+        sm: '0 0 2px rgba(34, 197, 94, 0.8)',
+        DEFAULT: '0 0 5px rgba(34, 197, 94, 0.7), 0 0 10px rgba(34, 197, 94, 0.4)',
+        lg: '0 0 10px rgba(34, 197, 94, 1), 0 0 20px rgba(34, 197, 94, 0.6)',
       }
     }
   },

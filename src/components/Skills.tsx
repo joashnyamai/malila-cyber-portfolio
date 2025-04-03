@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Shield, Database, Globe, Terminal, Server, Code } from "lucide-react";
+import { Shield, Database, Globe, Terminal, Server, Code, Bitcoin } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 
@@ -50,10 +50,10 @@ const Skills: React.FC = () => {
   ];
 
   const webSkills = [
-    { name: "WordPress", level: 90 },
-    { name: "Responsive Web Design", level: 85 },
-    { name: "Web Security", level: 95 },
-    { name: "SEO", level: 75 },
+    { name: "HTML/CSS", level: 95 },
+    { name: "JavaScript/TypeScript", level: 90 },
+    { name: "React.js", level: 85 },
+    { name: "Responsive Web Design", level: 95 },
   ];
 
   const technicalSkills = [
@@ -63,11 +63,11 @@ const Skills: React.FC = () => {
     { name: "Kali Linux Tools", level: 90 },
   ];
 
-  const dataSkills = [
-    { name: "Data Annotation", level: 90 },
-    { name: "Image Processing", level: 85 },
-    { name: "Quality Assurance", level: 80 },
-    { name: "AI/ML Support", level: 70 },
+  const blockchainSkills = [
+    { name: "Smart Contract Development", level: 85 },
+    { name: "Solidity", level: 80 },
+    { name: "Web3.js/Ethers.js", level: 75 },
+    { name: "DApp Development", level: 70 },
   ];
 
   const otherSkills = [
@@ -84,7 +84,7 @@ const Skills: React.FC = () => {
           <h2 className="text-3xl font-bold mb-3 cyber-text-glow">Technical Skills</h2>
           <div className="w-16 h-1 bg-cyber-primary rounded mb-6"></div>
           <p className="text-center text-foreground/80 max-w-2xl">
-            My expertise spans a wide range of cybersecurity domains and technical skills.
+            My expertise spans a wide range of cybersecurity domains, web development, blockchain technologies, and technical skills.
           </p>
         </div>
 
@@ -110,9 +110,9 @@ const Skills: React.FC = () => {
             skills={technicalSkills} 
           />
           <SkillCategory 
-            title="Data Skills" 
-            icon={<Database className="h-5 w-5" />} 
-            skills={dataSkills} 
+            title="Blockchain Development" 
+            icon={<Bitcoin className="h-5 w-5" />} 
+            skills={blockchainSkills} 
           />
           <SkillCategory 
             title="Other Skills" 

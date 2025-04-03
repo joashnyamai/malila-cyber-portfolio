@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { ShieldCheck, ArrowDown, Mail, Linkedin } from "lucide-react";
+import { ShieldCheck, ArrowDown, Mail, Linkedin, Github } from "lucide-react";
 
 const Hero: React.FC = () => {
   return (
@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
           
           <div className="h-10 overflow-hidden">
             <div className="typing-animation inline-block text-xl md:text-2xl text-primary">
-              Cybersecurity Analyst | Blockchain Developer & Enthusiast
+              Cybersecurity Analyst | Frontend Web Developer | Blockchain Developer & Enthusiast
             </div>
           </div>
           
@@ -42,6 +42,14 @@ const Hero: React.FC = () => {
             >
               <Linkedin className="mr-2 h-5 w-5" />
               LinkedIn
+            </Button>
+            <Button 
+              variant="outline" 
+              className="border-primary/50 text-primary hover:bg-primary/10"
+              onClick={() => window.open("https://github.com/joashnyamai", "_blank")}
+            >
+              <Github className="mr-2 h-5 w-5" />
+              GitHub
             </Button>
           </div>
         </div>

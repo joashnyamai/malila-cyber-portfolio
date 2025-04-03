@@ -25,6 +25,15 @@ const Footer: React.FC = () => {
               <Linkedin className="h-5 w-5" />
             </a>
             <a 
+              href="https://github.com/joashnyamai" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-foreground/70 hover:text-primary transition-colors"
+              aria-label="GitHub"
+            >
+              <Github className="h-5 w-5" />
+            </a>
+            <a 
               href="mailto:nyamaibigjoash@gmail.com" 
               className="text-foreground/70 hover:text-primary transition-colors"
               aria-label="Email"
@@ -41,7 +50,7 @@ const Footer: React.FC = () => {
           </div>
           
           <div className="text-center text-sm text-foreground/60">
-            <p className="mb-2">Cybersecurity Analyst | Blockchain Developer & Enthusiast | Incident Response Specialist</p>
+            <p className="mb-2">Cybersecurity Analyst | Frontend Web Developer | Blockchain Developer & Enthusiast</p>
             <p>&copy; {currentYear} Malila Nyamai. All rights reserved.</p>
           </div>
         </div>

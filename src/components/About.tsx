@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Shield, Lock, Database, Server, Code, Activity } from "lucide-react";
+import { Shield, Lock, Database, Server, Code, Activity, Bitcoin } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const About: React.FC = () => {
@@ -16,13 +16,13 @@ const About: React.FC = () => {
           <div className="cyber-card p-6">
             <h3 className="text-xl font-semibold mb-4 text-secondary">Professional Profile</h3>
             <p className="text-foreground/80 mb-4">
-              I am a Freelance IT Consultant, Cybersecurity Analyst, and Blockchain Developer with a passion for identifying, analyzing, and mitigating cyber threats. With experience in the cybersecurity domain, I specialize in incident response, threat intelligence, and blockchain technology.
+              I am a Freelance IT Consultant, Cybersecurity Analyst, Frontend Web Developer and Blockchain Developer with a passion for identifying, analyzing, and mitigating cyber threats. With experience in the cybersecurity domain, I specialize in incident response, threat intelligence, web technologies, and blockchain development.
             </p>
             <p className="text-foreground/80 mb-4">
               As an Incident Response Specialist and Threat Intelligence Expert, I excel in proactively detecting and responding to security incidents, safeguarding critical systems and data from malicious actors. I leverage cutting-edge tools and techniques to conduct thorough incident investigations, uncover the root causes of security breaches, and implement effective containment and remediation strategies.
             </p>
             <p className="text-foreground/80">
-              I also monitor the threat landscape, analyze emerging trends, and share actionable intelligence with stakeholders, enabling them to make informed decisions and fortify their defensive posture against evolving cyber threats. As a Blockchain Developer and Enthusiast, I'm passionate about creating secure, decentralized applications and solutions.
+              I also monitor the threat landscape, analyze emerging trends, and share actionable intelligence with stakeholders, enabling them to make informed decisions and fortify their defensive posture against evolving cyber threats. As a Frontend Web Developer and Blockchain Developer & Enthusiast, I'm passionate about creating secure, responsive web applications and decentralized blockchain solutions.
             </p>
           </div>
           
@@ -49,11 +49,19 @@ const About: React.FC = () => {
                   </div>
                   <div className="flex items-start">
                     <Code className="h-5 w-5 text-primary mr-2 mt-1 flex-shrink-0" />
-                    <span className="text-sm">Blockchain Development</span>
+                    <span className="text-sm">Frontend Web Development</span>
                   </div>
                   <div className="flex items-start">
                     <Activity className="h-5 w-5 text-primary mr-2 mt-1 flex-shrink-0" />
                     <span className="text-sm">Threat Monitoring</span>
+                  </div>
+                  <div className="flex items-start">
+                    <Bitcoin className="h-5 w-5 text-primary mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-sm">Blockchain Development</span>
+                  </div>
+                  <div className="flex items-start">
+                    <Shield className="h-5 w-5 text-primary mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-sm">Smart Contract Security</span>
                   </div>
                 </div>
               </CardContent>
@@ -78,6 +86,10 @@ const About: React.FC = () => {
                   <div className="grid grid-cols-[80px_1fr] items-center">
                     <span className="text-sm font-medium text-primary">LinkedIn:</span>
                     <a href="https://www.linkedin.com/in/malila-nyamai-0b2711221/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-secondary transition-colors truncate">linkedin.com/in/malila-nyamai-0b2711221</a>
+                  </div>
+                  <div className="grid grid-cols-[80px_1fr] items-center">
+                    <span className="text-sm font-medium text-primary">GitHub:</span>
+                    <a href="https://github.com/joashnyamai" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-secondary transition-colors">github.com/joashnyamai</a>
                   </div>
                   <div className="grid grid-cols-[80px_1fr] items-center">
                     <span className="text-sm font-medium text-primary">Location:</span>

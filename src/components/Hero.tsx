@@ -2,8 +2,28 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ShieldCheck, ArrowDown, Mail, Linkedin, Github, ChevronRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Hero: React.FC = () => {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: { 
+      opacity: 1,
+      transition: { 
+        staggerChildren: 0.3 
+      }
+    }
+  };
+  
+  const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: { 
+      y: 0, 
+      opacity: 1,
+      transition: { duration: 0.8, ease: [0.17, 0.67, 0.83, 0.97] }
+    }
+  };
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden hex-grid">
       {/* Background elements */}
@@ -14,26 +34,43 @@ const Hero: React.FC = () => {
       <div className="circle-bg right-1/4 bottom-1/4"></div>
       
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="flex flex-col items-center text-center space-y-6">
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-full border-2 border-primary animate-pulse-glow mb-4">
+        <motion.div 
+          className="flex flex-col items-center text-center space-y-6"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          <motion.div 
+            className="inline-flex items-center justify-center w-20 h-20 rounded-full border-2 border-primary animate-pulse-glow mb-4"
+            variants={itemVariants}
+          >
             <ShieldCheck className="h-10 w-10 text-primary" />
-          </div>
+          </motion.div>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight cyber-text-glow">
-            Malila Nyamai
-          </h1>
+          <motion.div variants={itemVariants}>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight cyber-text-glow">
+              We Provide <span className="text-cyber-primary">Cyber Solutions</span>
+            </h1>
+            <h2 className="text-3xl md:text-4xl font-bold mt-2">For Your Security</h2>
+          </motion.div>
           
-          <div className="h-10 overflow-hidden">
+          <motion.div variants={itemVariants} className="h-10 overflow-hidden">
             <div className="typing-animation inline-block text-xl md:text-2xl text-primary">
-              Cybersecurity Analyst | Frontend Web Developer | Blockchain Developer & Enthusiast
+              Cybersecurity Analyst | Frontend Web Developer | Blockchain Developer
             </div>
-          </div>
+          </motion.div>
           
-          <p className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto mt-4">
+          <motion.p 
+            className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto mt-4"
+            variants={itemVariants}
+          >
             Identifying, analyzing, and mitigating cyber threats to protect critical systems and data from malicious actors.
-          </p>
+          </motion.p>
           
-          <div className="flex flex-wrap justify-center gap-4 mt-8">
+          <motion.div 
+            className="flex flex-wrap justify-center gap-4 mt-8"
+            variants={itemVariants}
+          >
             <Button 
               className="bg-primary hover:bg-accent text-white border border-primary/50 cyber-glow group" 
               onClick={() => {
@@ -48,10 +85,10 @@ const Hero: React.FC = () => {
             <Button 
               variant="outline" 
               className="border-primary/50 text-primary hover:bg-primary/10 group"
-              onClick={() => window.open("https://www.linkedin.com/in/malila-nyamai-0b2711221/", "_blank")}
+              onClick={() => window.location.href = "/services"}
             >
-              <Linkedin className="mr-2 h-5 w-5" />
-              LinkedIn
+              <ShieldCheck className="mr-2 h-5 w-5" />
+              Our Services
               <ChevronRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
             <Button 
@@ -63,8 +100,8 @@ const Hero: React.FC = () => {
               GitHub
               <ChevronRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
       
       <a 

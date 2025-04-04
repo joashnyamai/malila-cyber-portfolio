@@ -27,7 +27,11 @@ const SkillCategory: React.FC<SkillCategoryProps> = ({ title, icon, skills }) =>
                 <span className="text-sm font-medium">{skill.name}</span>
                 <span className="text-xs text-foreground/70">{skill.level}%</span>
               </div>
-              <Progress value={skill.level} className="h-1.5 bg-muted" indicatorClassName="bg-gradient-to-r from-primary to-secondary cyber-glow" />
+              <Progress 
+                value={skill.level} 
+                className="h-1.5 bg-muted" 
+                indicatorClassName="bg-gradient-to-r from-primary to-secondary cyber-glow" 
+              />
             </div>
           ))}
         </div>

@@ -1,12 +1,13 @@
 
 import React from "react";
-import { Github, Linkedin, Mail, Globe } from "lucide-react";
+import { Github, Mail, Globe } from "lucide-react";
+import { Linkedin } from "lucide-react"; // Importing Linkedin icon
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="bg-background border-t border-primary/30 py-8 hex-grid">
+    <footer className="bg-background border-t border-primary/30 py-8">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center">
           <div className="flex items-center space-x-2 mb-4">

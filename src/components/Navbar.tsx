@@ -20,7 +20,6 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
     { label: "Home", href: "/" },
     { label: "About", href: "/#about" },
     { label: "Services", href: "/services" },
-    { label: "Dashboard", href: "/dashboard" },
     { label: "Experience", href: "/#experience" },
     { label: "Skills", href: "/#skills" },
     { label: "Contact", href: "/#contact" },

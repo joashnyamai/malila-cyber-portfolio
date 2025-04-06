@@ -78,29 +78,6 @@ const Index = () => {
         <Experience />
         <Skills />
         <Education />
-        
-        <section className="py-12 md:py-16 bg-background relative">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold cyber-text-glow mb-6">Security Dashboard</h2>
-            <p className="text-foreground/70 max-w-2xl mx-auto mb-8">
-              Monitor your security posture with our comprehensive analytics dashboard, providing real-time insights into your digital security.
-            </p>
-            <Link to="/dashboard">
-              <Button className="bg-cyber-primary hover:bg-cyber-accent text-white">
-                View Security Dashboard
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </Link>
-            <div className="mt-8 border border-cyber-primary/30 rounded-lg overflow-hidden shadow-lg">
-              <img 
-                src="/lovable-uploads/4a809dce-0954-4838-856f-f6690ecc1a6b.png" 
-                alt="Security Dashboard Preview" 
-                className="w-full object-cover opacity-80 hover:opacity-100 transition-opacity"
-              />
-            </div>
-          </div>
-        </section>
-        
         <Contact />
       </main>
       <Footer />

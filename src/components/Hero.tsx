@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ShieldCheck, ArrowDown, Mail, Linkedin, Github, ChevronRight } from "lucide-react";
@@ -98,6 +97,15 @@ const Hero: React.FC = () => {
             >
               <Github className="mr-2 h-5 w-5" />
               GitHub
+              <ChevronRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
+            </Button>
+            <Button 
+              variant="outline" 
+              className="border-primary/50 text-primary hover:bg-primary/10 group"
+              onClick={() => window.open("https://www.linkedin.com/in/malila-nyamai-0b2711221/", "_blank")}
+            >
+              <Linkedin className="mr-2 h-5 w-5" />
+              LinkedIn
               <ChevronRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
           </motion.div>

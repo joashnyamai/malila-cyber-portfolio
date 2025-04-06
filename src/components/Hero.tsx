@@ -1,7 +1,9 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ShieldCheck, ArrowDown, Mail, Linkedin, Github, ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Hero: React.FC = () => {
   const containerVariants = {
@@ -81,15 +83,16 @@ const Hero: React.FC = () => {
               Contact Me
               <ChevronRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
-            <Button 
-              variant="outline" 
-              className="border-primary/50 text-primary hover:bg-primary/10 group"
-              onClick={() => window.location.href = "/services"}
-            >
-              <ShieldCheck className="mr-2 h-5 w-5" />
-              Our Services
-              <ChevronRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </Button>
+            <Link to="/services">
+              <Button 
+                variant="outline" 
+                className="border-primary/50 text-primary hover:bg-primary/10 group"
+              >
+                <ShieldCheck className="mr-2 h-5 w-5" />
+                Our Services
+                <ChevronRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </Button>
+            </Link>
             <Button 
               variant="outline" 
               className="border-primary/50 text-primary hover:bg-primary/10 group"

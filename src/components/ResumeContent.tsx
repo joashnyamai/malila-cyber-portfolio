@@ -131,6 +131,7 @@ const ResumeDownloadButton = () => (
   <PDFDownloadLink
     document={<ResumeDocument />}
     fileName="Malila_Nyamai_Resume.pdf"
+    className="inline-block"
   >
     {({ blob, url, loading, error }) => (
       <Button 
@@ -140,7 +141,7 @@ const ResumeDownloadButton = () => (
       >
         <FileText className="mr-2 h-5 w-5" />
         {loading ? 'Generating PDF...' : 'Resume PDF'}
-        {!loading && <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>}
+        <ChevronRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
       </Button>
     )}
   </PDFDownloadLink>

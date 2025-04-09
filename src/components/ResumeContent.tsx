@@ -3,16 +3,20 @@ import { PDFDownloadLink, Document, Page, Text, View, StyleSheet, Font } from '@
 import { Button } from './ui/button';
 import { FileText, ChevronRight } from 'lucide-react';
 
-// Register Times New Roman font
+// Register a reliable font for PDF rendering
 Font.register({
-  family: 'Times New Roman',
-  src: 'https://fonts.cdnfonts.com/s/19915/times-new-roman.woff',
+  family: 'Open Sans',
+  fonts: [
+    { src: 'https://cdn.jsdelivr.net/npm/open-sans-all@0.1.3/fonts/open-sans-regular.ttf' },
+    { src: 'https://cdn.jsdelivr.net/npm/open-sans-all@0.1.3/fonts/open-sans-600.ttf', fontWeight: 600 },
+    { src: 'https://cdn.jsdelivr.net/npm/open-sans-all@0.1.3/fonts/open-sans-700.ttf', fontWeight: 700 },
+  ],
 });
 
-// Create styles with Times New Roman font size 12
+// Create styles with Open Sans font
 const styles = StyleSheet.create({
   page: {
-    fontFamily: 'Times New Roman',
+    fontFamily: 'Open Sans',
     fontSize: 12,
     padding: 30,
   },

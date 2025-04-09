@@ -1,9 +1,9 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { ShieldCheck, ArrowDown, Mail, Linkedin, Github, ChevronRight } from "lucide-react";
+import { ShieldCheck, ArrowDown, Mail, Linkedin, Github, ChevronRight, FileText } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { ResumeDownloadButton } from "./ResumeContent";
 
 const Hero: React.FC = () => {
   const containerVariants = {
@@ -111,6 +111,7 @@ const Hero: React.FC = () => {
               LinkedIn
               <ChevronRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
+            <ResumeDownloadButton />
           </motion.div>
         </motion.div>
       </div>

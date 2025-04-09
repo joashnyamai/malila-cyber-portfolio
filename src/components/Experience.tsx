@@ -92,7 +92,7 @@ const Experience: React.FC = () => {
           <ExperienceItem 
             title="Blockchain Hackathon Participant"
             company="Educhain Regional Hackathon"
-            location="University Campus"
+            location="Zetech Mangu Campus"
             period="Semester 3, 2024"
             description="Participated in a regional blockchain hackathon, demonstrating skills in blockchain technology and innovative problem-solving."
           />

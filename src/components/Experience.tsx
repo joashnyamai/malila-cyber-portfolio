@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Badge } from "@/components/ui/badge";
 import { BriefcaseIcon, CalendarIcon, MapPinIcon, Shield } from "lucide-react";
@@ -88,6 +87,14 @@ const Experience: React.FC = () => {
             location="Juja, Kiambu, Kenya"
             period="September 2023 - November 2023 (3 months)"
             description="Assisted in IT infrastructure management, network security implementation, and technical support in a university environment."
+          />
+          
+          <ExperienceItem 
+            title="Blockchain Hackathon Participant"
+            company="Educhain Regional Hackathon"
+            location="University Campus"
+            period="Semester 3, 2024"
+            description="Participated in a regional blockchain hackathon, demonstrating skills in blockchain technology and innovative problem-solving."
           />
         </div>
       </div>

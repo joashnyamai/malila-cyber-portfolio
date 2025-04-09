@@ -1,8 +1,7 @@
-
 import React from 'react';
 import { PDFDownloadLink, Document, Page, Text, View, StyleSheet, Font } from '@react-pdf/renderer';
 import { Button } from './ui/button';
-import { FileText } from 'lucide-react';
+import { FileText, ChevronRight } from 'lucide-react';
 
 // Register Times New Roman font
 Font.register({

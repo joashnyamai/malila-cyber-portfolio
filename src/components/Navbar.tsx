@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Link, useLocation } from "react-router-dom";
@@ -39,6 +39,7 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
     { label: "Experience", href: "experience", isSection: true },
     { label: "Skills", href: "skills", isSection: true },
     { label: "Contact", href: "contact", isSection: true },
+    { label: "Resume", href: "/resume", isSection: false, icon: FileText },
   ];
 
   return (
@@ -65,8 +66,9 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
                 <Link
                   key={item.label}
                   to={item.href}
-                  className="text-sm font-medium text-foreground/80 hover:text-cyber-primary hover:cyber-text-glow transition-all"
+                  className="text-sm font-medium text-foreground/80 hover:text-cyber-primary hover:cyber-text-glow transition-all flex items-center gap-1"
                 >
+                  {item.icon && <item.icon className="h-4 w-4" />}
                   {item.label}
                 </Link>
               )
@@ -106,9 +108,10 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
                 <Link
                   key={item.label}
                   to={item.href}
-                  className="text-sm font-medium py-2 text-foreground/80 hover:text-cyber-primary"
+                  className="text-sm font-medium py-2 text-foreground/80 hover:text-cyber-primary flex items-center gap-2"
                   onClick={() => setMobileMenuOpen(false)}
                 >
+                  {item.icon && <item.icon className="h-4 w-4" />}
                   {item.label}
                 </Link>
               )
@@ -121,3 +124,4 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
 };
 
 export default Navbar;
+

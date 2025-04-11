@@ -1,6 +1,6 @@
 import React from "react";
 import { Badge } from "@/components/ui/badge";
-import { BriefcaseIcon, CalendarIcon, MapPinIcon, Shield } from "lucide-react";
+import { BriefcaseIcon, CalendarIcon, MapPinIcon } from "lucide-react";
 
 interface ExperienceItemProps {
   title: string;
@@ -21,7 +21,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
     <div className="service-card mb-8">
       <div className="flex items-start">
         <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center mr-4 flex-shrink-0">
-          <Shield className="h-5 w-5 text-primary" />
+          <BriefcaseIcon className="h-5 w-5 text-primary" />
         </div>
         
         <div>

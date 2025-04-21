@@ -1,6 +1,5 @@
-
 import React from "react";
-import { Shield, Lock, Database, Server, Code, Activity, Bitcoin } from "lucide-react";
+import { Code, LayoutDashboard, Monitor, Layers, Pencil, Globe } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const About: React.FC = () => {
@@ -11,71 +10,66 @@ const About: React.FC = () => {
       
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center mb-12">
-          <h2 className="text-3xl font-bold mb-3 cyber-text-glow">WHICH SERVICE I PROVIDE</h2>
+          <h2 className="text-3xl font-bold mb-3 cyber-text-glow">WHAT I DO</h2>
           <div className="w-16 h-1 bg-primary rounded mb-6"></div>
           <p className="text-center text-foreground/80 max-w-2xl">
-            I support my clients as a cybersecurity analyst & frontend web developer by identifying and resolving a broad range of digital security concerns.
+            I bring ideas to life as a frontend web developer, specializing in modern, scalable, and responsive interfaces.
           </p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="service-card">
             <div className="flex items-start mb-4">
-              <Shield className="h-6 w-6 text-primary mr-3 flex-shrink-0" />
-              <h3 className="text-xl font-semibold text-secondary">Web Security</h3>
-            </div>
-            <p className="text-sm text-foreground/80">
-              I handle comprehensive web security audits, identifying vulnerabilities in web applications, websites, and e-commerce platforms.
-            </p>
-          </div>
-          
-          <div className="service-card">
-            <div className="flex items-start mb-4">
-              <Database className="h-6 w-6 text-primary mr-3 flex-shrink-0" />
-              <h3 className="text-xl font-semibold text-secondary">Database Security</h3>
-            </div>
-            <p className="text-sm text-foreground/80">
-              Secure your critical data with robust database security measures and encryption protocols to prevent unauthorized access.
-            </p>
-          </div>
-          
-          <div className="service-card">
-            <div className="flex items-start mb-4">
-              <Lock className="h-6 w-6 text-primary mr-3 flex-shrink-0" />
-              <h3 className="text-xl font-semibold text-secondary">Identifying Threats</h3>
-            </div>
-            <p className="text-sm text-foreground/80">
-              I identify potential security threats and vulnerabilities before they can be exploited by malicious actors.
-            </p>
-          </div>
-          
-          <div className="service-card">
-            <div className="flex items-start mb-4">
-              <Server className="h-6 w-6 text-primary mr-3 flex-shrink-0" />
-              <h3 className="text-xl font-semibold text-secondary">Network Security</h3>
-            </div>
-            <p className="text-sm text-foreground/80">
-              Implementing comprehensive network security measures to protect organizational infrastructure from unauthorized access.
-            </p>
-          </div>
-          
-          <div className="service-card">
-            <div className="flex items-start mb-4">
               <Code className="h-6 w-6 text-primary mr-3 flex-shrink-0" />
-              <h3 className="text-xl font-semibold text-secondary">Frontend Development</h3>
+              <h3 className="text-xl font-semibold text-secondary">Modern UI Development</h3>
             </div>
             <p className="text-sm text-foreground/80">
-              Creating responsive, modern web applications with React, TypeScript and other cutting-edge frontend technologies.
+              Building responsive, fast, and beautiful user interfaces with React, TypeScript, and Tailwind CSS.
             </p>
           </div>
-          
           <div className="service-card">
             <div className="flex items-start mb-4">
-              <Bitcoin className="h-6 w-6 text-primary mr-3 flex-shrink-0" />
-              <h3 className="text-xl font-semibold text-secondary">Blockchain Development</h3>
+              <LayoutDashboard className="h-6 w-6 text-primary mr-3 flex-shrink-0" />
+              <h3 className="text-xl font-semibold text-secondary">Dashboard Design</h3>
             </div>
             <p className="text-sm text-foreground/80">
-              Building decentralized applications, smart contracts, and blockchain solutions with a focus on security and efficiency.
+              Creating intuitive dashboards and web applications with modern design systems and seamless user experiences.
+            </p>
+          </div>
+          <div className="service-card">
+            <div className="flex items-start mb-4">
+              <Monitor className="h-6 w-6 text-primary mr-3 flex-shrink-0" />
+              <h3 className="text-xl font-semibold text-secondary">Web Animation</h3>
+            </div>
+            <p className="text-sm text-foreground/80">
+              Enhancing websites with interactive animations and polished transitions for engaging web experiences.
+            </p>
+          </div>
+          <div className="service-card">
+            <div className="flex items-start mb-4">
+              <Layers className="h-6 w-6 text-primary mr-3 flex-shrink-0" />
+              <h3 className="text-xl font-semibold text-secondary">Component Architecture</h3>
+            </div>
+            <p className="text-sm text-foreground/80">
+              Developing reusable, scalable component libraries and design systems customized for each project.
+            </p>
+          </div>
+          <div className="service-card">
+            <div className="flex items-start mb-4">
+              <Pencil className="h-6 w-6 text-primary mr-3 flex-shrink-0" />
+              <h3 className="text-xl font-semibold text-secondary">UI/UX Design Collaboration</h3>
+            </div>
+            <p className="text-sm text-foreground/80">
+              Collaborating with designers to ensure pixel-perfect implementation of Figma, XD, or Sketch designs.
+            </p>
+          </div>
+          <div className="service-card">
+            <div className="flex items-start mb-4">
+              <Globe className="h-6 w-6 text-primary mr-3 flex-shrink-0" />
+              <h3 className="text-xl font-semibold text-secondary">Performance & Accessibility</h3>
+            </div>
+            <p className="text-sm text-foreground/80">
+              Optimizing web applications for speed, SEO, and accessibility, ensuring reach for all users.
             </p>
           </div>
         </div>
@@ -84,10 +78,10 @@ const About: React.FC = () => {
           <div className="cyber-card p-6">
             <h3 className="text-xl font-semibold mb-4 text-secondary">Professional Profile</h3>
             <p className="text-foreground/80 mb-4">
-              I am a Freelance IT Consultant, Cybersecurity Analyst, Frontend Web Developer and Blockchain Developer with a passion for identifying, analyzing, and mitigating cyber threats. With experience in the cybersecurity domain, I specialize in incident response, threat intelligence, web technologies, and blockchain development.
+              I'm a passionate Frontend Web Developer with strong skills in JavaScript, React, and TypeScript. I transform concepts into engaging, user-focused web applications by combining clean code with creative design.
             </p>
             <p className="text-foreground/80">
-              I monitor the threat landscape, analyze emerging trends, and share actionable intelligence with stakeholders, enabling them to make informed decisions and fortify their defensive posture against evolving cyber threats. As a Frontend Web Developer and Blockchain Developer & Enthusiast, I'm passionate about creating secure, responsive web applications and decentralized blockchain solutions.
+              My approach integrates the latest web standards, accessibility best practices, and modern CSS architecture. I enjoy collaborating with both teams and clients to deliver outstanding user experiences.
             </p>
           </div>
           

@@ -46,19 +46,19 @@ const Hero: React.FC = () => {
             className="inline-flex items-center justify-center w-20 h-20 rounded-full border-2 border-primary animate-pulse-glow mb-4"
             variants={itemVariants}
           >
-            <ShieldCheck className="h-10 w-10 text-primary" />
+            <Code className="h-10 w-10 text-primary" />
           </motion.div>
           
           <motion.div variants={itemVariants}>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight cyber-text-glow">
-              We Provide <span className="text-cyber-primary">Cyber Solutions</span>
+              Creative <span className="text-cyber-primary">Frontend Web Developer</span>
             </h1>
-            <h2 className="text-3xl md:text-4xl font-bold mt-2">For Your Security</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mt-2">Building Modern Web Experiences</h2>
           </motion.div>
           
           <motion.div variants={itemVariants} className="h-10 overflow-hidden">
             <div className="typing-animation inline-block text-xl md:text-2xl text-primary">
-              Cybersecurity Analyst | Frontend Web Developer | Blockchain Developer
+              React | TypeScript | UI/UX | CSS | Responsive Design | Web Animations
             </div>
           </motion.div>
           
@@ -66,7 +66,7 @@ const Hero: React.FC = () => {
             className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto mt-4"
             variants={itemVariants}
           >
-            Identifying, analyzing, and mitigating cyber threats to protect critical systems and data from malicious actors.
+            Specializing in crafting beautiful, high-performance, and accessible interfaces for the modern web using cutting-edge frontend technologies.
           </motion.p>
           
           <motion.div 

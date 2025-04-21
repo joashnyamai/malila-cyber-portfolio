@@ -48,10 +48,7 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2">
             <div className="text-cyber-primary font-bold text-xl cyber-text-glow">MN</div>
-            <span className="text-lg font-medium hidden sm:inline-block">
-              Malila Nyamai
-              <span className="ml-2 text-xs font-normal text-cyber-primary/70">Frontend Web Developer</span>
-            </span>
+            <span className="text-lg font-medium hidden sm:inline-block">Malila Nyamai</span>
           </Link>
 
           {/* Desktop menu */}

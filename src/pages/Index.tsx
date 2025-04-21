@@ -9,25 +9,25 @@ import Education from "@/components/Education";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ShieldCheck, Code, Server, Database, Monitor, Layers } from "lucide-react";
+import { ArrowRight, ShieldCheck, Code, Server, Database } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Index = () => {
   const services = [
     {
-      title: "UI Development",
+      title: "Cyber Security",
+      icon: <ShieldCheck className="h-6 w-6 text-cyber-primary" />,
+      description: "Comprehensive protection for your digital assets with our advanced security solutions."
+    },
+    {
+      title: "Web Development",
       icon: <Code className="h-6 w-6 text-cyber-primary" />,
-      description: "Crafting beautiful, performant interfaces using React, TypeScript, and Tailwind CSS."
+      description: "Professional web development services focusing on security and performance."
     },
     {
-      title: "Web Animation",
-      icon: <Monitor className="h-6 w-6 text-cyber-primary" />,
-      description: "Adding delightful interactions and web animations for an engaging user experience."
-    },
-    {
-      title: "Component Libraries",
-      icon: <Layers className="h-6 w-6 text-cyber-primary" />,
-      description: "Building scalable, reusable UI component libraries tailored for your needs."
+      title: "Blockchain",
+      icon: <Database className="h-6 w-6 text-cyber-primary" />,
+      description: "Blockchain development and security services for your decentralized applications."
     }
   ];
 

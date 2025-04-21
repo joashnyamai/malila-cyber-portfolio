@@ -1,5 +1,6 @@
+
 import React from "react";
-import { Code, Layers, Pencil, LayoutDashboard, Monitor } from "lucide-react";
+import { Shield, Database, Globe, Terminal, Server, Code, Bitcoin } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 
@@ -40,42 +41,46 @@ const SkillCategory: React.FC<SkillCategoryProps> = ({ title, icon, skills }) =>
 };
 
 const Skills: React.FC = () => {
-  const frontendSkills = [
-    { name: "HTML5", level: 98 },
-    { name: "CSS3/SASS", level: 95 },
-    { name: "JavaScript (ES6+)", level: 95 },
-    { name: "TypeScript", level: 90 },
-    { name: "React.js", level: 90 },
-    { name: "Tailwind CSS", level: 90 },
-    { name: "Responsive Design", level: 98 },
-    { name: "Accessibility (a11y)", level: 85 }
+  const securitySkills = [
+    { name: "Penetration Testing", level: 95 },
+    { name: "Vulnerability Assessment", level: 90 },
+    { name: "Incident Response", level: 85 },
+    { name: "Security Auditing", level: 80 },
   ];
 
-  const frameworkSkills = [
-    { name: "Next.js", level: 80 },
-    { name: "Redux/State Mgmt", level: 85 },
-    { name: "Framer Motion", level: 80 },
-    { name: "Shadcn UI/Component Libs", level: 85 }
+  const networkSkills = [
+    { name: "CCNA: Enterprise Networking", level: 85 },
+    { name: "Network Security", level: 90 },
+    { name: "Firewall Configuration", level: 80 },
+    { name: "VPN Setup & Management", level: 75 },
   ];
 
-  const uiuxSkills = [
-    { name: "UI/UX Principles", level: 90 },
-    { name: "Figma/XD/Sketch", level: 85 },
-    { name: "Web Animation", level: 85 },
-    { name: "Prototyping", level: 80 }
+  const webSkills = [
+    { name: "HTML/CSS", level: 95 },
+    { name: "JavaScript/TypeScript", level: 90 },
+    { name: "React.js", level: 85 },
+    { name: "Responsive Web Design", level: 95 },
   ];
 
-  const toolingSkills = [
-    { name: "Git & GitHub", level: 90 },
-    { name: "NPM/Yarn", level: 85 },
-    { name: "Webpack/Vite", level: 80 }
+  const technicalSkills = [
+    { name: "Linux Systems", level: 85 },
+    { name: "Shell Scripting", level: 75 },
+    { name: "Python", level: 70 },
+    { name: "Kali Linux Tools", level: 90 },
   ];
 
-  const softSkills = [
-    { name: "Team Communication", level: 90 },
-    { name: "Client Collaboration", level: 88 },
-    { name: "Project Management", level: 80 },
-    { name: "Technical Documentation", level: 85 }
+  const blockchainSkills = [
+    { name: "Smart Contract Development", level: 85 },
+    { name: "Solidity", level: 80 },
+    { name: "Web3.js/Ethers.js", level: 75 },
+    { name: "DApp Development", level: 70 },
+  ];
+
+  const otherSkills = [
+    { name: "Threat Intelligence", level: 90 },
+    { name: "Online Consultancy", level: 95 },
+    { name: "Technical Documentation", level: 85 },
+    { name: "Team Collaboration", level: 80 },
   ];
 
   return (
@@ -85,38 +90,43 @@ const Skills: React.FC = () => {
       
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center mb-12">
-          <h2 className="text-3xl font-bold mb-3 cyber-text-glow">FRONTEND SKILLS</h2>
+          <h2 className="text-3xl font-bold mb-3 cyber-text-glow">TECHNICAL SKILLS</h2>
           <div className="w-16 h-1 bg-primary rounded mb-6"></div>
           <p className="text-center text-foreground/80 max-w-2xl">
-            My expertise is centered on modern frontend development, web animation, UI/UX, and React ecosystem.
+            My expertise spans a wide range of cybersecurity domains, web development, blockchain technologies, and technical skills.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           <SkillCategory 
-            title="Frontend Development" 
+            title="Security Skills" 
+            icon={<Shield className="h-5 w-5" />} 
+            skills={securitySkills} 
+          />
+          <SkillCategory 
+            title="Network Skills" 
+            icon={<Server className="h-5 w-5" />} 
+            skills={networkSkills} 
+          />
+          <SkillCategory 
+            title="Web Development" 
+            icon={<Globe className="h-5 w-5" />} 
+            skills={webSkills} 
+          />
+          <SkillCategory 
+            title="Technical Tools" 
+            icon={<Terminal className="h-5 w-5" />} 
+            skills={technicalSkills} 
+          />
+          <SkillCategory 
+            title="Blockchain Development" 
+            icon={<Bitcoin className="h-5 w-5" />} 
+            skills={blockchainSkills} 
+          />
+          <SkillCategory 
+            title="Other Skills" 
             icon={<Code className="h-5 w-5" />} 
-            skills={frontendSkills} 
-          />
-          <SkillCategory 
-            title="Frameworks & Tooling" 
-            icon={<Layers className="h-5 w-5" />} 
-            skills={frameworkSkills} 
-          />
-          <SkillCategory 
-            title="UI/UX & Animation" 
-            icon={<Monitor className="h-5 w-5" />} 
-            skills={uiuxSkills} 
-          />
-          <SkillCategory 
-            title="Development Tools" 
-            icon={<LayoutDashboard className="h-5 w-5" />} 
-            skills={toolingSkills} 
-          />
-          <SkillCategory 
-            title="Collaboration" 
-            icon={<Pencil className="h-5 w-5" />} 
-            skills={softSkills} 
+            skills={otherSkills} 
           />
         </div>
       </div>

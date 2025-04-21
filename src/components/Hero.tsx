@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { ShieldCheck, ArrowDown, Mail, Linkedin, Github, ChevronRight, FileText } from "lucide-react";
+import { ShieldCheck, ArrowDown, Mail, Linkedin, Github, ChevronRight, FileText, Code } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ResumeDownloadButton } from "./ResumeContent";

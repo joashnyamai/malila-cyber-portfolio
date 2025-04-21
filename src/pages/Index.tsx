@@ -9,7 +9,7 @@ import Education from "@/components/Education";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ShieldCheck, Code, Server, Database } from "lucide-react";
+import { ArrowRight, ShieldCheck, Code, Server, Database, Monitor, Layers } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Index = () => {

@@ -1,6 +1,5 @@
-
 import React from "react";
-import { Code, Html, Css, Javascript, React as ReactIcon, Layers, Pencil, LayoutDashboard, Monitor } from "lucide-react";
+import { Code, Layers, Pencil, LayoutDashboard, Monitor } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 

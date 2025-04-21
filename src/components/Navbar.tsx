@@ -1,8 +1,9 @@
+
 import React, { useState } from "react";
 import { Menu, X, FileText } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Link, useLocation } from "react-router-dom";
-import { useIsMobile } from "@/hooks/use-mobile";
 
 interface NavbarProps {
   className?: string;
@@ -11,7 +12,6 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ className }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
-  const isMobile = useIsMobile();
   
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -75,18 +75,19 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
             ))}
           </div>
 
-          {/* Mobile menu button - ALWAYS visible on small screens */}
-          <button
-            className="md:hidden absolute top-4 right-4 flex items-center justify-center p-2 text-cyber-primary"
+          {/* Mobile menu button */}
+          <Button
+            variant="ghost"
+            size="icon"
+            className="md:hidden"
             onClick={toggleMobileMenu}
-            aria-label="Toggle mobile menu"
           >
             {mobileMenuOpen ? (
-              <X className="h-6 w-6" />
+              <X className="h-6 w-6 text-cyber-primary" />
             ) : (
-              <Menu className="h-6 w-6" />
+              <Menu className="h-6 w-6 text-cyber-primary" />
             )}
-          </button>
+          </Button>
         </div>
       </div>
 
@@ -123,3 +124,4 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
 };
 
 export default Navbar;
+
